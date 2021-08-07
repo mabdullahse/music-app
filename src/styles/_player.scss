@@ -1,0 +1,72 @@
+.player {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .time-control {
+    // background: lightcoral;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    input {
+      padding: 1rem 0rem;
+      width: 100%;
+      -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+      width: 100%; /* Specific width is required for Firefox. */
+      background: transparent; /* Otherwise white in Chrome */
+    }
+    p {
+      padding: 1rem;
+      font-weight: bold;
+    }
+  }
+  .play-control {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+}
+
+input[type="range"]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background-color: black;
+}
+
+.track {
+  background-color: lightcoral;
+  width: 100%;
+  position: relative;
+  height: 1rem;
+  overflow: hidden;
+}
+.animate-track {
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(10%);
+  pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+  .player {
+    .time-control {
+      width: 80%;
+    }
+    .play-control{
+      width: 80%;
+    }
+  }
+}

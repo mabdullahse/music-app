@@ -1,0 +1,26 @@
+.nav {
+  height: 20vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.library-button {
+  padding: 0.9rem;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  border: 1px solid gray;
+  &:hover {
+    background: gray;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .library-button {
+    z-index: 100;
+  }
+}

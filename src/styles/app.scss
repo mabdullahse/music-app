@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3 {
+  color: rgb(68, 68, 68);
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h3,
+h4 {
+  font-weight: 400;
+  color: rgb(110, 110, 110);
+}
+
+.app {
+  transition: all 0.5 ease;
+}
+.app-active {
+  margin-left: 30%;
+}
+@import "./_player.scss";
+@import "./_song.scss";
+@import "./_library.css";
+@import "./nav";

@@ -8,4 +8,4 @@ Having following features
 
 
 
-  ![Screenshot](screenshot_1.png)
+  ![Screenshot](Screenshot_1.png)

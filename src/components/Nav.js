@@ -12,7 +12,7 @@ function Nav({ setlibraryActive, libraryActive }) {
         onClick={() => setlibraryActive(!libraryActive)}
       >
         Library
-        <FontAwesomeIcon icon={faMusic} />
+        <FontAwesomeIcon icon={faMusic} style={{ marginLeft: "4px" }} />
       </button>
     </div>
   );
